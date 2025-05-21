@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>J&S Pastelería - Crea tu postre</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <div class="logo">J&S</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Haz tu pedido</a></li>
+                    <li><a href="#">Nuestras sedes</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <!-- Área de vista previa del postre -->
+            <div class="dessert-preview">
+                <div class="dessert-image-container">
+                    <img src="c:\Users\josga\proyectoPasteleria\img\default.jpg" alt="Postre personalizado" class="dessert-image fade-in" id="dessertImage">
+                </div>
+            </div>
+            
+            <!-- Panel de personalización -->
+            <div class="customization-panel">
+                <h2 class="panel-title">Crea tu postre</h2>
+                
+                <div class="customization-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select class="form-control" id="saborSelect">
+                                <option value="" selected disabled>Sabor</option>
+                                <option value="fresa">Fresa</option>
+                                <option value="chocolate">Chocolate</option>
+                                <option value="vainilla">Vainilla</option>
+                                <option value="limon">Limón</option>
+                                <option value="cafe">Café</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select class="form-control" id="glaceadoSelect">
+                                <option value="" selected disabled>Glaceado</option>
+                                <option value="chocolate">Chocolate</option>
+                                <option value="vainilla">Vainilla</option>
+                                <option value="caramelo">Caramelo</option>
+                                <option value="frutas">Frutas del bosque</option>
+                                <option value="ninguno">Ninguno</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select class="form-control" id="toppingsSelect">
+                            <option value="" selected disabled>Toppings</option>
+                            <option value="fresas">Fresas</option>
+                            <option value="frambuesas">Frambuesas</option>
+                            <option value="chocolate">Chispas de chocolate</option>
+                            <option value="nueces">Nueces</option>
+                            <option value="caramelo">Caramelo</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select class="form-control" id="tipoPostreSelect">
+                            <option value="" selected disabled>Tipo de postre</option>
+                            <option value="tarta">Tarta</option>
+                            <option value="milhojas">Milhojas</option>
+                            <option value="brownie">Brownie</option>
+                            <option value="cheesecake">Cheesecake</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select class="form-control" id="tamanoSelect">
+                                <option value="" selected disabled>Tamaño</option>
+                                <option value="individual">Individual</option>
+                                <option value="pequeno">Pequeño (4-6 personas)</option>
+                                <option value="mediano">Mediano (8-10 personas)</option>
+                                <option value="grande">Grande (12-15 personas)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="mensajeInput" placeholder="Mensaje">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="image-upload-area">
+                            Agrega una imagen (Opcional según el tamaño del postre)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script2.js"></script>
+</body>
+</html>
